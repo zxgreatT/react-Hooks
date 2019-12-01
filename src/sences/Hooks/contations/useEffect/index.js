@@ -23,16 +23,18 @@ export default function useEffectDemo(props) {
         }, 10);
         return () => {
             console.log('清理')
+            clearInterval(timer)
         };
-    }, [])
+    }, [top,left])
     return (
-        <div ref= {moveRef} style={{
+            <div ref= {moveRef} style={{
             position: 'absolute',
             backgroundColor: '#f40',
             width: 100,
             height: 100,
             opacity: 0.5
-        }}>我是一个块  
+            }}>我是一个块  
         </div>
+        
     )
 }
