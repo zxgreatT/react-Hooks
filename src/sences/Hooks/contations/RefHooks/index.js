@@ -1,4 +1,4 @@
-import React, {useState, useEffect,useRef}from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
 
 
@@ -8,31 +8,34 @@ export default function RefHooks() {
     const nRef = useRef(n)
     const intRef = useRef()
     useEffect(() => {
-        if(n === 0) {
-            return
-        }
+        console.log(123)
+        // if(n === 0) {
+        //     return
+        // }
         // timerRef.current = setTimeout(() => {
         //     console.log(n)
         //     setN(n-1)
         // },1000)
-        const timer= setInterval(() => {
+        const timer = setInterval(() => {
             nRef.current--
             setN(nRef.current)
-            if(nRef.current == 0) {
+            if (nRef.current == 0) {
                 clearInterval(timer)
             }
         }, 1000);
         return () => {
             clearTimeout(timer)
         }
-    },[])
+    }, [])
     return (
         <div>
             <h1>{n}</h1>
             <input ref={intRef} onChange={() => {
                 console.dir(intRef.current)
-            }}/>
-            <button></button>
+            }} />
+            <button onClick={() => {
+                intRef.current.focus()
+            }}>点击</button>
         </div>
     )
 }
