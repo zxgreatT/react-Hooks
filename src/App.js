@@ -9,11 +9,12 @@ import UseCallbackDemo from './sences/Hooks/contations/useCallback'
 import UseMemoDemo from './sences/Hooks/contations/useMemo'
 import UseImperativeHandleDemo from './sences/Hooks/contations/useImperativeHandle'
 import UseLayoutEffectDemo from './sences/Hooks/contations/useLayoutEffect'
-
+import UseContextDemo from './sences/Hooks/contations/useContext'
 function App() {
   return (
           <div>
-            <UseLayoutEffectDemo />
+            <UseContextDemo />
+            {/* <UseLayoutEffectDemo /> */}
             {/* <UseImperativeHandleDemo /> */}
             {/* <UseMemoDemo /> */}
             {/* <UseCallbackDemo /> */}
