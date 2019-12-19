@@ -10,10 +10,13 @@ import UseMemoDemo from './sences/Hooks/contations/useMemo'
 import UseImperativeHandleDemo from './sences/Hooks/contations/useImperativeHandle'
 import UseLayoutEffectDemo from './sences/Hooks/contations/useLayoutEffect'
 import UseContextDemo from './sences/Hooks/contations/useContext'
+import UseHooks from './sences/Hooks/contations/useHooks'
+
 function App() {
   return (
           <div>
-            <UseContextDemo />
+            <UseHooks />
+            {/* <UseContextDemo /> */}
             {/* <UseLayoutEffectDemo /> */}
             {/* <UseImperativeHandleDemo /> */}
             {/* <UseMemoDemo /> */}
