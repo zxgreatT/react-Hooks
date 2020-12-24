@@ -5,7 +5,6 @@ export default function useLayoutEffectDemo() {
     const h1Ref = useRef()
     // useEffect(() => {
     //    h1Ref.current.innerText = Math.random().toFixed(2)
-    // })
     useLayoutEffect(() => {
        h1Ref.current.innerText = Math.random().toFixed(2)
     })

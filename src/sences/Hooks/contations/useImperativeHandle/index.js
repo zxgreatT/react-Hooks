@@ -5,7 +5,9 @@ const Test = (props, ref) => {
         ref,
         () => {
             console.log('👌')
-            return 1
+            return () => {
+                return 123
+            }
         },
         []
     )
@@ -20,7 +22,7 @@ export default function useImperativeHandleDemo() {
         <div>
             <TestWrapper ref={testRef}/>
             <button onClick={() => {
-                console.log(testRef)
+                console.log(testRef.current())
             }}>按钮</button>
         </div>
     )

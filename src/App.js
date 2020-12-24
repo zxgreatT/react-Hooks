@@ -15,10 +15,10 @@ import UseHooks from './sences/Hooks/contations/useHooks'
 function App() {
   return (
           <div>
-            <UseHooks />
+            {/* <UseHooks /> */}
             {/* <UseContextDemo /> */}
             {/* <UseLayoutEffectDemo /> */}
-            {/* <UseImperativeHandleDemo /> */}
+            <UseImperativeHandleDemo />
             {/* <UseMemoDemo /> */}
             {/* <UseCallbackDemo /> */}
             {/* <Hooks /> */}

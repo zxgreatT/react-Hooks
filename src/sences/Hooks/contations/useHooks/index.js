@@ -16,7 +16,7 @@ const useList = () => {
     useEffect(() => {
         (async function() {
             const listdata = await acyncFun()
-            setList(listdata) 
+            setList(listdata)
         })()
     }, [])
     return list
@@ -30,7 +30,7 @@ export default function UseHooks() {
         <div>
             <ul>
                 {list}
-            </ul>        
+            </ul>
         </div>
     )
 }

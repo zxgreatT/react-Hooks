@@ -25,7 +25,7 @@ export default function useEffectDemo(props) {
             console.log('清理')
             clearInterval(timer)
         };
-    }, [top,left])
+    }, [top, left])
     return (
             <div ref= {moveRef} style={{
             position: 'absolute',
@@ -33,8 +33,7 @@ export default function useEffectDemo(props) {
             width: 100,
             height: 100,
             opacity: 0.5
-            }}>我是一个块  
+            }}>我是一个块
         </div>
-        
     )
 }

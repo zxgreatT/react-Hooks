@@ -9,16 +9,16 @@ const themes = {
       foreground: "#ffffff",
       background: "#222222"
     }
-  };
+  }
   
-  const ThemeContext = React.createContext(themes.light);
+const ThemeContext = React.createContext(themes.light);
   
 export default function useContextDemo() {
     return (
       <ThemeContext.Provider value={themes.dark}>
         <Toolbar />
        </ThemeContext.Provider>
-    );
+    )
   }
   
   function Toolbar(props) {
@@ -26,12 +26,11 @@ export default function useContextDemo() {
       <div>
         <ThemedButton />
       </div>
-    );
+    )
   }
   
   function ThemedButton() {
-    const theme = useContext(ThemeContext);
-  
+    const theme = useContext(ThemeContext) 
     return (
       <button style={{ background: theme.background, color: theme.foreground }}>
         I am styled by theme context!
